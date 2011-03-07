@@ -1,0 +1,12 @@
+.panel
+  .title
+    New Module
+  .body
+    %p
+      Create your new module here!
+    %form{:method=>'post', :action=>$_SERVER['REQUEST_URI']}
+      %fieldset
+        %label Module Name
+        %input{:type=>'text', :name=>'name'}
+        %br
+        %input{:type=>'submit'}
